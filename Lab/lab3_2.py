@@ -1,5 +1,4 @@
 import random
-
 # def fun4():
 def fun5():
     list1 = []
@@ -30,4 +29,17 @@ def fun7():
     print(str)
     str.sort()
     print(str)
+    list2 = []
+    prevword = str[0]
+    for word in str:
+        if(word[0]==prevword[0]):
+            list2.append(word)
+        else:
+            list1.append(list2)
+            list2  =[]
+            list2.append(word)
+        prevword = word
+    list1.append(list2)
+    print(list1)
+
 

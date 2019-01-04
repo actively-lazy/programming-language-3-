@@ -41,5 +41,3 @@ def fun3():
         if i in list2:
             list3.append(i)
     print(list3)
-if __name__ == '__main__':
-    fun3()
