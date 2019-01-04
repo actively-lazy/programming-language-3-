@@ -29,6 +29,7 @@ def fun7():
     print(str)
     str.sort()
     print(str)
+    list1 = []
     list2 = []
     prevword = str[0]
     for word in str:
