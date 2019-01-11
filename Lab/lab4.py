@@ -1,5 +1,4 @@
 import random
-
 daysOfTheWeek = ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
 name = ""
 first_names = ('John', 'Andy', 'Joe')
@@ -31,3 +30,11 @@ for name in namesOfStudent:
     attendanceStudents[name] = currattendence.copy()
     currattendence.clear()
 print(attendanceStudents)
+
+for student in attendanceStudents.keys():
+    avg = 0
+    attendance = attendanceStudents[student]
+    for a in attendance:
+        avg += int(a)
+    avg = avg / 7
+    print("avg attendance for ", student, " {0} = {1} ".format(attendance,int(avg)))
