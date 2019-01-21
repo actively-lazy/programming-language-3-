@@ -45,11 +45,15 @@ class EmailError(Exception):
 
 email = input("Enter email address")
 try:
-    count = 0
+    starCount = 0
+    dotCount = 0
     for e in email:
-        if e == "." or e == "@":
-            count += 1
-    if (count > 2):
+        if e == "@":
+            starCount += 1
+        if e == ".":
+            dotCount += 1
+
+    if starCount != 1 or dotCount != 1:
         raise EmailError
 except EmailError as e:
     print("Email error")
@@ -59,6 +63,7 @@ except EmailError as e:
 class AgeError(Exception):
     def __str__(self):
         return "Age Error called"
+
 
 age = int(input("Enter age"))
 try:
