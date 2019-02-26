@@ -37,9 +37,12 @@ stateCircle = False
 c = root.bind('c', create_circle)
 r = root.bind('r', create_rectangle)
 q = root.bind('q', quit_program)
-buttonRectangle = Button(root, text="Rectangle", fg="red", command=create_rectangle, underline=0)
-buttonCircle = Button(root, text="Circle", fg="green", command=create_circle, underline=0)
-buttonQuit = Button(root, text="Quit", fg="black", command=quit_program, underline=0)
+buttonRectangle = Button(root, text="Rectangle", fg="red",
+                         command=create_rectangle, underline=0)
+buttonCircle = Button(root, text="Circle", fg="green",
+                      command=create_circle, underline=0)
+buttonQuit = Button(root, text="Quit", fg="black",
+                    command=quit_program, underline=0)
 
 buttonRectangle.pack(side=LEFT)
 buttonCircle.pack(side=RIGHT)

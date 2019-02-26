@@ -1,6 +1,6 @@
 import random
 
-inputPath = input("Enter the path of file u want to open");
+inputPath = input("Enter the path of file u want to open")
 f1 = open(inputPath, 'r')
 print(f1.read())
 outputPath = input("Enter the path of file u want to create ")
@@ -9,8 +9,8 @@ text = input("Enter text you want to add")
 f2.write(text)
 f1.close()
 f2.close()
-fromPath = input("Enter the path of file u want to copy from");
-toPath = input("Enter the path of file u want to copy to");
+fromPath = input("Enter the path of file u want to copy from")
+toPath = input("Enter the path of file u want to copy to")
 print("copied from ", fromPath, " to ", toPath)
 with open(fromPath) as f:
     lines = f.readlines()
@@ -33,7 +33,7 @@ print(arr)
 index = int(input("Enter position of index"))
 try:
     print(arr[index])
-except Exception as  e:
+except Exception as e:
     print("Error occurred, sry")
     print("Error = ", str(e))
 
